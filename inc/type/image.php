@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
+	<meta charset="UTF-8">
 
 	<meta itemprop="image" content="<?php echo $directURL; ?>" />
 
 	<meta property="og:title" content="<?php echo $filename; ?>" />
-	<meta property="og:type" content="website" />
+	<meta property="og:type" content="instapp:photo"<?php /* workaround for facebook */ ?> />
 
 	<meta property="og:url" content="<?php echo $canonialURL ?>" />
 	<meta property="og:image" content="<?php echo $directURL; ?>" />
+
+	<meta name="medium" content="image"<?php /* workaround for facebook */ ?> />
 
 	<meta name="twitter:card" content="photo" />
 	<meta name="twitter:site" content="@ViMaSter" />
