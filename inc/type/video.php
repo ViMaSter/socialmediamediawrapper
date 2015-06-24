@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" />
 
-	<meta property="og:title" content="<?php echo $filename; ?>">
-	<meta property="og:type" content="video.other">
-	<meta property="og:video:url" content="<?php echo $directURL; ?>">
-	<meta property="og:video:type" content="<?php echo $type; ?>">
-	<meta property="og:url" content="<?php echo $canonialURL; ?>">
+	<meta property="og:title" content="<?php echo $filename; ?>" />
+	<meta property="og:type" content="video.other" />
+	<meta property="og:video:url" content="<?php echo $directURL; ?>" />
+	<meta property="og:video:type" content="<?php echo $type; ?>" />
+	<meta property="og:url" content="<?php echo $canonialURL; ?>" />
 
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@ViMaSter">
-	<meta name="twitter:creator" content="@ViMaSter">
-	<meta name="twitter:description" content="<?php echo $filename; ?>">
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@ViMaSter" />
+	<meta name="twitter:creator" content="@ViMaSter" />
+	<meta name="twitter:description" content="<?php echo $filename; ?>" />
 
 	<title><?php echo $filename; ?></title>
 	<style type="text/css">

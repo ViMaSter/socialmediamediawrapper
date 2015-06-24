@@ -20,4 +20,4 @@ Variables available (and examples):
 ### Platforms targeted
 * [Open Graph](http://ogp.me/)
 * [Twitter Cards](https://dev.twitter.com/cards/)
-* ~~[Facebooks implementation of Open Graph](https://developers.facebook.com/tools/debug/og/object/)~~ (**[Not working](http://i.vimaster.de/2015-06-09_04-09-44.png)**)  
+* [Facebooks implementation of Open Graph](https://developers.facebook.com/tools/debug/og/object/)

@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" />
 
-	<meta itemprop="image" content="<?php echo $directURL; ?>">
+	<meta itemprop="image" content="<?php echo $directURL; ?>" />
 
-	<meta name="og:title" content="<?php echo $filename; ?>">
-	<meta name="og:type" content="website">
-	<meta name="og:url" content="<?php echo $canonialURL ?>">
-	<meta name="og:image" content="<?php echo $directURL; ?>">
+	<meta property="og:title" content="<?php echo $filename; ?>" />
+	<meta property="og:type" content="website" />
 
-	<meta name="twitter:card" content="photo">
-	<meta name="twitter:site" content="@ViMaSter">
-	<meta name="twitter:creator" content="@ViMaSter">
-	<meta name="twitter:image" content="<?php echo $directURL; ?>">
+	<meta property="og:url" content="<?php echo $canonialURL ?>" />
+	<meta property="og:image" content="<?php echo $directURL; ?>" />
+
+	<meta name="twitter:card" content="photo" />
+	<meta name="twitter:site" content="@ViMaSter" />
+	<meta name="twitter:creator" content="@ViMaSter" />
+	<meta name="twitter:image" content="<?php echo $directURL; ?>" />
 
 	<title><?php echo $filename; ?></title>
 	<style type="text/css">
