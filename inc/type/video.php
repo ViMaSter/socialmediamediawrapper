@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-
-	<meta itemprop="image" content="<?php echo $directURL; ?>">
+	<meta charset="UTF-8" />
 
 	<meta name="og:title" content="<?php echo $filename; ?>">
 	<meta name="og:type" content="video.other">
 	<meta name="og:url" content="<?php echo $canonialURL ?>">
 
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@ViMaSter">
-	<meta name="twitter:creator" content="@ViMaSter">
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@ViMaSter" />
+	<meta name="twitter:creator" content="@ViMaSter" />
 
 	<title><?php echo $filename; ?></title>
 	<style type="text/css">
