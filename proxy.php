@@ -4,8 +4,8 @@
 	// Roughly prepare our absolute path
 	$absolutePath = sprintf(
 		"%s://%s",
-		$_SERVER['HTTPS']?"https":"http",
-		$_SERVER["SERVER_NAME"].(dirname($_SERVER["REQUEST_URI"]) == "/" ? "" : dirname($_SERVER["REQUEST_URI"]))
+		$_SERVER['HTTPS'] ? "https" : "http",
+		$_SERVER["SERVER_NAME"] . (dirname($_SERVER["REQUEST_URI"]) == "/" ? "" : dirname($_SERVER["REQUEST_URI"]))
 	);
 
 	// Initialize our variables
@@ -49,6 +49,6 @@
 
 		$canonialURL = "$absolutePath/$filename";
 		$directURL = "$absolutePath/direct/$filename";
-		include "inc/type/".$responseType.".php";
+		include "inc/type/" . $responseType . ".php";
 	}
 ?>
