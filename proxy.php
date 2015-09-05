@@ -23,9 +23,15 @@
 	// Gracefully close connection when no file was found
 	if (!is_file($filename))
 	{
-		header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found");
-                require_once("404.php");
-		die();
+		header($_SERVER["SERVER_PROTOCOL"] . " 404 Not Found");
+		if (file_exists("404.php"))
+		{
+			require_once("404.php");
+			exit();
+		}
+		else {
+			exit("404");
+		}
 	}
 
 	// Gather type info
