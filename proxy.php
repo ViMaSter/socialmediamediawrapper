@@ -18,10 +18,13 @@
 		$filename = $query[1];
 	}
 
+	$blacklist = json_decode( file_get_contents( "blacklist.json" ) );
 	$filename = array_pop($query);
 
+
 	// Gracefully close connection when no file was found
-	if (!is_file($filename))
+	//  or the filename is listed in the blacklist
+	if (!is_file($filename) || in_array($filename, $blacklist))
 	{
 		header($_SERVER["SERVER_PROTOCOL"] . " 404 Not Found");
 		if (file_exists("404.php"))
@@ -35,15 +38,15 @@
 	}
 
 	// Gather type info
-    $finfo = finfo_open(FILEINFO_MIME_TYPE);
-    $type = finfo_file($finfo, $filename);
-    finfo_close($finfo);
+	$finfo = finfo_open(FILEINFO_MIME_TYPE);
+	$type = finfo_file($finfo, $filename);
+	finfo_close($finfo);
 
 	if ($directQuery)
 	{
-        // Send expected content
-        header("Content-type: ".$type);
-        echo file_get_contents($filename);
+		http_send_content_disposition(basename($filename), true);
+		http_send_content_type($type);
+		http_send_file($filename);
 	}
 	else
 	{
