@@ -24,7 +24,8 @@
 	if (!is_file($filename))
 	{
 		header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found");
-		exit("404");	
+                require_once("404.php");
+		die();
 	}
 
 	// Gather type info
