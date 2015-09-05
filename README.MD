@@ -1,6 +1,6 @@
 # Social Media Media Wrapper
-Wait... You typed _media_ twice...  
-  
+<sup>Wait... You typed *media* twice...<sup>  
+
 Place this repository into a subdirectory of your choosing and media files will be wrapped using the templates provided in the `/inc/type`-subdirectory.
 
 ### Templates
