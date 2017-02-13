@@ -44,9 +44,9 @@
 
 	if ($directQuery)
 	{
-		http_send_content_disposition(basename($filename), true);
-		http_send_content_type($type);
-		http_send_file($filename);
+		header('Content-Disposition: inline; filename="'.basename($filename).'"');
+		header('Content-Type: ' . $type);
+		echo file_get_contents($filename);
 	}
 	else
 	{
