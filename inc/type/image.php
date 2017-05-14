@@ -37,10 +37,6 @@
 	    vertical-align: middle;
 	    text-align: center;
 	}
-	img
-	{
-		display: table-cell;
-	}
 	.centered
 	{
 	    max-width: 100vw;
