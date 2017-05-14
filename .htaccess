@@ -1,5 +1,11 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    # Redirect all querys to proxy.php for further processing
-	RewriteRule ^(.*)$ proxy.php?query=$1 [QSA,L]
+
+	RewriteRule ^(.*)$ router.php?query=$1 [QSA]
+
+	# DEV-BRANCH
+	# If you require a dev-branch on your live-server (not recommended!) uncomment
+	# the two lines below, and replace the sample RewriteCond with an approriate codition
+	# RewriteCond %{HTTP_HOST} ^dev. # requests beginning with "dev." 
+	# RewriteRule ^(.*)$ router.php?query=$1&dev=1 [QSA]
 </IfModule>

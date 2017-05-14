@@ -3,6 +3,6 @@
 	"404.php",
 	"blacklist.json",
 	"LICENCE",
-	"proxy.php",
+	"router.php",
 	"README.MD"
 ]
