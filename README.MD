@@ -3,6 +3,9 @@
 
 Place this repository into a subdirectory of your choosing and media files will be wrapped using the templates provided in the `/inc/type`-subdirectory.
 
+### Dev-branch
+If you require two versions on your live-servers, take a look into the .htaccess-file, to enable a dev-version redirecting specific requests.
+
 ### Templates
 Variables available (and examples):
 * `$absolutePath`: Path before the filename without trailing slash  
