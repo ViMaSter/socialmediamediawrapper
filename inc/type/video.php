@@ -39,7 +39,7 @@
 	</style>
 </head>
 <body>
-	<video controls="" autoplay="" name="media">
+	<video controls="" autoplay="" name="media"<?php echo !is_null($_GET["loop"])?" loop":"" ?>>
 		<source src="<?php echo $directURL; ?>" type="video/mp4">
 	</video>
 </body>
