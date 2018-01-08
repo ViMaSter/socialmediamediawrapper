@@ -6,6 +6,11 @@
 	# DEV-BRANCH
 	# If you require a dev-branch on your live-server (not recommended!) uncomment
 	# the two lines below, and replace the sample RewriteCond with an approriate codition
-	# RewriteCond %{HTTP_HOST} ^dev. # requests beginning with "dev." 
+	# RewriteCond %{HTTP_HOST} ^dev.
 	# RewriteRule ^(.*)$ router.php?query=$1&dev=1 [QSA]
+
+	# disable gzip-compression for direct download requests
+	RewriteCond %{REQUEST_URI} (direct\/)
+	RewriteRule ^(.*)$ $1 [NS,E=no-gzip:1,E=dont-vary:1]
+
 </IfModule>
